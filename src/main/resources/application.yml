@@ -1,0 +1,18 @@
+server:
+  port: 9888
+spring:
+  application:
+    name: sso-client-demo
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: utf-8
+cas:
+  client-host-url: http://localhost:9888
+  server-login-url: https://siiltxygii.login.aliyunidaas.com/public/api/application/cas_apereo/idaas-cn-mp91ghp0j02cas_apereo/login
+  server-url-prefix: https://siiltxygii.login.aliyunidaas.com/public/api/application/cas_apereo/idaas-cn-mp91ghp0j02cas_apereo
+  use-session: true
+  redirect-after-validation: true
+  validation-type: cas
